@@ -8,16 +8,18 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import { ModeToggle } from "../theme-toggle";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 border-b shadow-sm">
+    <nav className="flex items-center justify-between px-6 py-4 border-b shadow-sm max-h-16">
       <div className="flex items-center space-x-4">
         <div className="w-8 h-8 bg-gray-300 rounded-full" />{" "}
         <span className="text-xl font-semibold">testimonial</span>
       </div>
 
       <div className="hidden md:flex items-center space-x-6">
+        <ModeToggle />
         <Link href="/" className="hover:text-blue-600">
           Home
         </Link>
